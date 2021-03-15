@@ -1,0 +1,99 @@
+
+.MainHeading{
+  color : #102a42 ;
+  padding : 10px 10px ;
+  position : relative ;
+  font-size : 2.5em ;
+  text-align: center ;
+  width : fit-content ;
+  margin : 20px auto; 
+
+}
+.MainHeading::after{
+  position : absolute ;
+  width : 60% ;
+  bottom : 0px ;
+  background-color : #49a6e9  ;
+  content : " ";
+  height :  4px ;
+  left : 20% ;
+}
+.Card{
+  width : 35vw; ;
+  border-radius : 10px ;
+  box-shadow : 0 5px 15px rgba(0,0,0,0.1) ;
+  padding-bottom : 10px; 
+  margin-bottom : 20px;
+}
+.Card img{
+  width : 100% ;
+  border-top-right-radius : 10px ;
+  border-top-left-radius : 10px ;
+  height : 350px ;
+}
+.Card p{
+  padding : 10px 20px ;
+}
+.Card div{
+  clear : both ;
+  overflow: auto ;
+  padding : 0px 20px ;
+}
+.Card div h3 {
+  float : left ;
+}
+.Card div .Price{
+  color : #49a6e9 ;
+  background-color : #ebf7ff ;
+  padding : .25em .5em ;
+  float : right ;
+  font-weight : bolder ;
+}
+
+
+.Card .Information{
+  letter-spacing : 2px ;
+  font-size : 1em ;
+  color : #617d98 ;
+}
+.Card .Information span{
+  color : #49a6e9 ;
+  font-weight : bolder ;
+  cursor : pointer ;
+}
+
+
+.ButtonDanger{
+  margin : auto ;
+  display : block ;
+  padding : 10px;
+  margin-bottom : 10px ;
+  width : 50% ;
+  outline : none ;
+  border : solid 1px #bb2525 ;
+  color : #bb2525 ;
+  text-transform: capitalize;
+  font-size : 1em ;
+  background-color : #fff ;
+  border-radius : 5px ;
+  cursor : pointer ;
+}
+
+@media screen and (max-width:1012px) and (min-width : 726px){
+  .Card{
+    width : 50vw ;
+  }
+}
+@media screen and (max-width:726px){
+  .Card{
+    width : 70vw ;
+  }
+}
+@media screen and (max-width:454px){
+  .Card{
+    width : 90vw ;
+  }
+  .Card h3{
+    max-width : 70% ;
+  }
+}
