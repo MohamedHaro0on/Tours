@@ -16,9 +16,12 @@ const App = () => {
       setLoading(false)
     })
   }
+
   useEffect(() => {
     FetchData();
   }, [])
+
+
   const ButtonHandler = (id) => {
     let NewList = Data.filter(element => element.id !== id);
     setData(NewList);
@@ -26,13 +29,13 @@ const App = () => {
 
   let Output = null;
   if (loading) {
-    Output = <div className="MainHeading"> Loading..... !! </div>
+    Output = <div className="MainHeading" aria-label ="Loading ....!!"> Loading..... !! </div>
   }
   else if (Data.length === 0) {
     Output = (
       <>
         <div className="MainHeading"> there is no Tours left .</div>
-        <button className="ButtonDanger" onClick = {FetchData}> Refresh</button>
+        <button className="ButtonDanger" onClick = {FetchData} aria-label ="Get information"> Refresh</button>
       </>
     )
   }

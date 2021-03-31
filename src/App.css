@@ -26,28 +26,23 @@
   margin-bottom : 20px;
 }
 .Card img{
-  width : 100% ;
   border-top-right-radius : 10px ;
   border-top-left-radius : 10px ;
-  height : 350px ;
 }
 .Card p{
   padding : 10px 20px ;
 }
 .Card div{
-  clear : both ;
-  overflow: auto ;
   padding : 0px 20px ;
 }
-.Card div h3 {
-  float : left ;
+.Card div h2 {
+  display : flex ;
+  justify-content: space-between;
+  align-items : center ;
 }
 .Card div .Price{
   color : #49a6e9 ;
-  background-color : #ebf7ff ;
   padding : .25em .5em ;
-  float : right ;
-  font-weight : bolder ;
 }
 
 
@@ -79,21 +74,21 @@
   cursor : pointer ;
 }
 
-@media screen and (max-width:1012px) and (min-width : 726px){
+@media screen and (max-width:1012px){
   .Card{
     width : 50vw ;
+  }
+  .Card div h2{
+    font-size : 1em ;
   }
 }
 @media screen and (max-width:726px){
   .Card{
-    width : 70vw ;
+    width : 85vw ;
   }
 }
-@media screen and (max-width:454px){
+@media screen and (max-width:513px){
   .Card{
-    width : 90vw ;
-  }
-  .Card h3{
-    max-width : 70% ;
+    width : 95vw ;
   }
 }
